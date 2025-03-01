@@ -1,0 +1,38 @@
+<html class="weava-extension-context" data-weava-installed="1"><head><style>body {transition: opacity ease-in 0.2s; } 
+    body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+    </style><style>body {transition: opacity ease-in 0.2s; } 
+    body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+    </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Práctica 17</title>
+        <style>
+          * { 
+            padding: 0; 
+            margin: 0; 
+          }
+          canvas { 
+            background: #eee; 
+            display: block; 
+            margin: 0 auto; 
+          }
+          footer{ 
+            font-family: sans-serif; 
+            font-size: 14px; text-align: center;
+            padding: 5px; 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            color: limegreen;
+          }
+        </style>
+      <style>[_nghost-wsf-c106]{height:100vh}.weava-ui-wrapper-new[_ngcontent-wsf-c106]{box-shadow:#0006 -1px 3px 60px;position:fixed;top:0;opacity:.99;left:initial;right:-580px;display:block;width:340px;min-width:auto;height:100vh;z-index:9999999999996!important;background:white;border:none;box-sizing:border-box;transition:1s}.weava-ui-wrapper-new[_ngcontent-wsf-c106] > *[_ngcontent-wsf-c106]{display:flex}.weava-ui-wrapper-new.show[_ngcontent-wsf-c106]{right:0;transition:1s}.weava-ui-wrapper-new.show.folder-show[_ngcontent-wsf-c106]{width:580px!important}ngb-toast.weava-notification-frame[_ngcontent-wsf-c106]{box-shadow:#0006 -1px 3px 45px!important;position:fixed!important;left:initial!important;top:20px!important;right:20px!important;width:300px!important;border-radius:4px!important;background-color:#142733!important;transition:all .3s ease!important;z-index:999}</style><style>#clipperButton[_ngcontent-wsf-c108]{font-size:30px!important;line-height:30px!important;width:30px!important;height:30px!important;text-align:center!important;z-index:2147483647!important;position:absolute!important;top:5px!important;right:5px!important;padding:0!important;background:midnightblue!important;color:#fff!important;border:none!important;outline:none!important;border-radius:50%!important}.weava-drop-area-wrapper[_ngcontent-wsf-c108]{position:fixed!important;z-index:2147483647!important;top:50%!important;width:70px!important;padding-left:10px;left:-10px;background-color:#142733!important;transition:left .2s!important;opacity:0;display:none;flex-direction:column;justify-content:center}.weava-drop-area-wrapper.weava-drop-area-wrapper-show[_ngcontent-wsf-c108]{opacity:1;display:flex}.weava-drop-area-wrapper.weava-drop-area-wrapper-drag-over[_ngcontent-wsf-c108]{left:0}.weava-drop-area[_ngcontent-wsf-c108]{display:inline-flex;justify-content:center;height:50px!important;background-color:#142733!important}.weava-drop-area[_ngcontent-wsf-c108] > img[_ngcontent-wsf-c108]{max-width:80%;margin:3px}.weava-drop-area-text[_ngcontent-wsf-c108]{font-weight:700!important;padding:7px 0!important;text-align:center!important;background-color:#142733!important;color:#cbcbcb!important;font-size:10px!important}</style><style>[_nghost-wsf-c76]{width:340px;height:100vh}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-main[_ngcontent-wsf-c76]   .logo[_ngcontent-wsf-c76]{width:60%;margin-top:40px}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-main[_ngcontent-wsf-c76]   .title[_ngcontent-wsf-c76]{max-width:250px;color:#848484;font-family:Lato,Helvetica Neue,Helvetica,sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:center;margin-top:24px}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-main[_ngcontent-wsf-c76]   .login-btn[_ngcontent-wsf-c76]{width:60%;padding:10px 15px;border-radius:2px;border:1px solid #00b8c2;background:#00bfd2;color:#fff;font-size:14px;text-align:center;transition:all .1s ease-in;cursor:pointer;margin-top:58px}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-main[_ngcontent-wsf-c76]   .login-btn[_ngcontent-wsf-c76]:hover{background:#01dccf;color:#fff}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-main[_ngcontent-wsf-c76]   .login-btn[_ngcontent-wsf-c76]:active, [_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-main[_ngcontent-wsf-c76]   .login-btn.active[_ngcontent-wsf-c76]{background:#617186;border-color:#617186}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-loader[_ngcontent-wsf-c76]   .logo-wrap[_ngcontent-wsf-c76]{height:50%;max-height:200px}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-loader[_ngcontent-wsf-c76]   .logo-wrap[_ngcontent-wsf-c76]   .logo[_ngcontent-wsf-c76]{width:50%}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-loader[_ngcontent-wsf-c76]   .logo-wrap[_ngcontent-wsf-c76]   .loader[_ngcontent-wsf-c76]{width:40px;height:40px;margin-top:14px}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-loader[_ngcontent-wsf-c76]   .login-actions[_ngcontent-wsf-c76]{height:50%;max-height:280px}[_nghost-wsf-c76]   .login-c[_ngcontent-wsf-c76]   .login-loader[_ngcontent-wsf-c76]   .login-actions[_ngcontent-wsf-c76]   .space[_ngcontent-wsf-c76]{margin:20px}[_nghost-wsf-c76]   .login-text-sm[_ngcontent-wsf-c76]{font-size:12px;color:#9f9f9f;line-height:23px;text-align:center}[_nghost-wsf-c76]   .login-text-link-sm[_ngcontent-wsf-c76]{vertical-align:middle;display:inline-block;color:#0fa0a3;text-decoration:none;font-size:14px;cursor:pointer}</style></head>
+      <body cz-shortcut-listen="true">
+        <canvas id="miCanvas" width="960" height="640"></canvas>
+        <footer>
+          <p>PRACTICA 17 - Rompe-ladrilos</p>
+          <p> Netica </p>
+        </footer>
+        <script type="text/javascript" src="js/CodigoP17.js"></script>
+      
+    <app-weava-root id="weava-root" class="weava" ng-version="15.2.1"></app-weava-root></body></html>
